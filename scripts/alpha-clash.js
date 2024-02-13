@@ -7,7 +7,14 @@
 //   playGroundSection.classList.remove('hidden');
 // }
 
+function continueGame(){
+    // step-1: generate random alphabet
+    const alphabet = getARendomAlphabet();
+    console.log('your random alphabet:', alphabet)
+}
+
 function play(){
   hideElementById('home-screen');
   showElementById('play-ground');
+  continueGame()
 }
